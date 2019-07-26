@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            text-transform: uppercase;
+            background: linear-gradient(to right, #b721ff 0%, #21d4fd 100%);
+        }
+        h1{
+            padding: 100px 0 150px 0;
+            font-size: 60px;
+            letter-spacing: 15px;
+            font-weight: lighter;
+        }
+        a{
+            text-decoration: none;
+            color: #fff;
+            position: relative;
+            padding: 6px 8px;
+            font-weight: 500;
+            font-size: 30px;
+        }
+        a::before,
+        a::after{
+            height: 0%;
+            width: 100%;
+            position: absolute;
+            content: '';
+            opacity: 0;
+            transition: all ease-in-out 0.3s;
+        }
+        a::before{
+            right: 0;
+            top: 0;
+            border-top: 3px solid #fff;
+            transform: translate(-100%, 50%);
+        }
+        a::after{
+            left: 0;
+            bottom: 0;
+            border-bottom: 2px solid #fff;
+            transform: translate(100%, -50%);
+        }
+        a:hover::before,
+        a:hover::after{
+            opacity: 1;
+            transform: translate(0%, 0%);
+        }
+    </style>
+</head>
+<body>
+    <h1>Created By: Web Codian</h1>
+    <a href="#">Hover Over Me</a>
+</body>
+</html>
